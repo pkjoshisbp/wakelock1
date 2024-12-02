@@ -6,8 +6,8 @@ version: 0.6.2
 repository: https://github.com/creativecreatorormaybenot/wakelock/tree/main/wakelock
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
-  flutter: '>=2.0.0'
+  sdk: '>=2.17.0 <4.0.0'
+   flutter: '>=3.0.0' 
 
 dependencies:
   flutter:
@@ -18,7 +18,10 @@ dependencies:
   wakelock_macos: ^0.4.0
   wakelock_platform_interface: ^0.3.0
   wakelock_web: ^0.4.0
-  wakelock_windows: ^0.2.0
+  wakelock_windows:
+    git:
+      url: https://github.com/pkjoshisbp/wakelock_windows.git # Use your custom fork if needed
+      ref: main # Ensure this is updated to support win32 ^5.9.0
 
 dev_dependencies:
   flutter_test:
